@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="_7___Sound_Shaker_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake the Device" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3N-mx-8pk">
+                                <rect key="frame" x="155" y="50" width="291" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="291" id="LvR-ju-Z1w"/>
+                                    <constraint firstAttribute="height" constant="59" id="oOU-He-fsT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="43"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boom1" translatesAutoresizingMaskIntoConstraints="NO" id="YLf-uz-ZVO">
+                                <rect key="frame" x="144" y="190" width="312" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="gdg-H6-Bcg"/>
+                                    <constraint firstAttribute="width" constant="312" id="lhf-9b-deL"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="YLf-uz-ZVO" secondAttribute="centerX" id="6bl-DV-Nth"/>
+                            <constraint firstItem="Q3N-mx-8pk" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="EkO-Ur-Mjh"/>
+                            <constraint firstAttribute="centerX" secondItem="Q3N-mx-8pk" secondAttribute="centerX" constant="-0.5" id="PrP-2g-bEL"/>
+                            <constraint firstItem="YLf-uz-ZVO" firstAttribute="top" secondItem="Q3N-mx-8pk" secondAttribute="bottom" constant="81" id="T0X-aJ-E50"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="boom1" width="1200" height="838"/>
+    </resources>
+</document>
